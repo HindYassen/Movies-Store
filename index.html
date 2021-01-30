@@ -1,0 +1,133 @@
+<html>
+
+<head>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body onload=" now_playing()">
+
+    <section id="side-bar">
+        <div id="side-menu">
+            <ul class="side-list">
+                <li class="item1   nav-category"  ><a href="#">Now playing</a></li>
+                <li class="item2 " ><a href="#">Popular</a></li>
+                <li class="item3 " ><a href="#">Top Rated</a></li>
+                <li class="item4 " ><a href="#">Trending</a></li>
+                <li class="item5 " ><a href="#">Upcoming</a></li>
+                <li class="item6 " ><a>Contact Us</a></li>
+            </ul>
+            <div class="container">
+                <div class="social-bar">
+                    <span><a href=""><i class="fa fa-facebook p-2"></i> </a></span>
+                    <span><a href=""><i class="fa fa-twitter p-2"></i> </a> </span>
+                    <span><a href=""><i class="fa fa-globe p-2"></i></a> </span>
+                </div>
+                <div class="pt-3" style="color: #999;">
+                    Copyright © 2019 All Rights Reserved.
+                </div>
+            </div>
+
+        </div>
+        <div id="sideBarToggle">
+            <div class="logo"> <img src="images/logo.png" alt=""></div>
+            <div class="toggle">
+                <span><i class="fa fa-align-justify"></i></span>
+            </div>
+            <div class="social">
+                <span><i class="fa fa-globe"></i></span>
+                <span><i class="fa fa-share-alt"></i></span>
+            </div>
+        </div>
+    </section>
+   
+    <section id="search-bar" class="m-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <input id="searchByName" onkeyup="findbyWord()" placeholder="get movies by word..." type="text"
+                        class="form-group form-control">
+                </div>
+                <div class="col-md-6">
+                    <input placeholder="search" id="searchInArr" onkeyup="findInArr()" type="text"
+                        class="form-group form-control">
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section id="movies-menu">
+        <div class="container">
+            <div class="row" id="myRow">
+
+
+            </div>
+        </div>
+    </section>
+ 
+    <section id="contact-us">
+        <div class="container">
+            <h1 class="header-title my-5">ContacUs...</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <input id="NameInp" onkeyup="checkName()" placeholder="Enter Your Name" type="text" class="form-group form-control">
+                    <div class="alert alert-danger" id="namealert" role="alert">
+                        Your Name is not valid
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="EmailInp" onkeyup="checkEmail()"  placeholder="Enter Email" type="text" class="form-control">
+                    <div class="alert alert-danger" id="Emailalert" role="alert">
+                        entre valid email
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input id="PhoneInp" onkeyup="checkPhone()"  placeholder="Enter Phone" type="text" class="form-group form-control">
+                    <div class="alert alert-danger" id="Phonealert" role="alert">
+                        entre valid phone
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="AgeInp" onkeyup="checkAge()"  placeholder="Enter Age" type="text" class="form-group form-control">
+                    <div class="alert alert-danger" id="Agealert" role="alert">
+                        entre valid Age
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input id="PasswordInp" onkeyup="checkPass()"  placeholder="Enter Password" type="password" class="form-group form-control">
+                    <div class="alert alert-danger" id="Passwordalert" role="alert">
+                        entre valid password *Minimum eight characters, at least one letter and one number:*
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="RePasswordInp" onkeyup="checkRePass()"  placeholder="Enter RePassword" type="password" class="form-group form-control">
+                    <div class="alert alert-danger" id="RePasswordalert" role="alert">
+                        entre valid Repassword
+                    </div>
+                </div>
+            </div>
+            <button class="form-group btn btn-outline-danger disabled" id="contact" > Submit</button>
+        </div>
+    </section>
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

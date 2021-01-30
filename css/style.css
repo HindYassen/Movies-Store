@@ -1,0 +1,134 @@
+body{
+    background-color: #000000f2;
+}
+
+.alert{
+    display: none
+}
+/********************************Movies and OverLay******************************/
+.card{
+    border: 0;
+}
+.team-member{
+   
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.card-overlay{
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    background-color: rgba(255,255,255,.7);
+}
+ 
+  .team-card:hover  .card-overlay{
+    opacity: 1;
+    top:0;
+    left: 0;
+    transition: all .5s;
+}
+
+.team-info{
+    padding: 1rem; 
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #000000;
+
+}
+/*******************SideBar*****************************/
+#side-bar{
+    background-color:  #000;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    position: fixed;
+    left: -250px
+}
+#side-menu{
+    width: 250px;
+    height: 100vh;
+    float: left;
+}
+#sideBarToggle {
+    background-color: #ffffff;
+    padding: 10px;
+    color: #000;
+    float: left;
+    cursor: pointer;
+    height: 100vh;
+ 
+}
+.logo{
+    padding: 25px 0;
+}
+.logo img{
+    height: 48px;
+
+}
+.social{
+    padding: 25px 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 11;
+}
+.social .fa-globe{
+    padding: 10px;
+    
+}
+.social .fa-share-alt{
+    padding: 10px;
+    
+}
+.toggle{
+    padding: 25px 0;
+    position: absolute;
+    top: 50%;
+    bottom: 25%;
+}
+.toggle .fa-align-justify{
+    padding: 10px;
+}
+/*********************ContactUs ***********************/
+.header-title{
+    color: #ffffff;
+}
+.form-control{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    text-align: center;
+}
+
+.side-list{
+    list-style: none;
+    color: #ffffff;
+    padding: 25px;
+}
+a {
+    color: #f9f6f6;
+    /* font-weight: 500;
+    font-size: 16px; */
+}
+a:hover {
+     color: #ff655c;
+    transition: all 0.3s;
+    text-decoration:none
+  }
+
+.social-bar{
+    display: inline;
+    color: #ffffff;
+    padding: 25px;
+}
+ 
